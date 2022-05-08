@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Albums from './Albums';
 import NavBar from './nav';
 import Home from './home'
 import Bio from './biografia'
