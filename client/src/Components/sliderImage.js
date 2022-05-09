@@ -16,9 +16,9 @@ export default [
     songs: ["Tranmision 20/20", "La Resistencia", "Lo Que Hay Que Vivir", "Flores", "Protocolo", "Vaiven", "Sonora"]
   },
   {
-    title: "Album 3",
-    description: "This is the Third Album",
+    title: "El Gran Final",
+    description: "This is El Gran Final Album",
     urls: Third,
-    songs: ["Song 1", "Song 2", "Song 3", "Song 4", "Song 5"]
+    songs: ["Antología de Ciencía Ficción", "La Hoguera Digital", "Baile de los Inocentes", "Viernes por la Noche y la Tradición de Paul Fort", "Eclipse", "El Gran Final"]
   }
 ];
