@@ -1,6 +1,6 @@
-import First from "../imgs/LaMarcha.png"
-import Second from "../imgs/LaResistencia.png";
-import Third from "../imgs/Album3.jpg";
+import First from "../imagenes/LaMarcha.png"
+import Second from "../imagenes/LaResistencia.png";
+import Third from "../imagenes/Album3.jpg";
 
 export default [
   {

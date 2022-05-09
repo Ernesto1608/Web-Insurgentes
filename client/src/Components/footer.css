@@ -13,6 +13,6 @@ a:hover {
 footer{
     padding: 15px;
     background-color: #2A2A2C;
-    background-image: url("./imagenes/patron_naranja.png");
+    background-image: url("../imagenes/patron_naranja.png");
     background-size: cover;
 }

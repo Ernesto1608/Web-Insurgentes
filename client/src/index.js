@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Albums from './Albums';
-import NavBar from './nav';
-import Home from './home'
-import Bio from './biografia'
-import Footer from './footer'
+import NavBar from './Components/nav';
+import Home from './Components/home'
+import Bio from './Components/biografia'
+import Footer from './Components/footer'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

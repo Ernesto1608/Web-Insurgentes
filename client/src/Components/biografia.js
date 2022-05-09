@@ -1,5 +1,5 @@
 import './biografia.css';
-import imagenBanda from "./imagenes/lineas_insurgentes.png"
+import imagenBanda from "../imagenes/lineas_insurgentes.png"
 
 function Bio() {
   return (

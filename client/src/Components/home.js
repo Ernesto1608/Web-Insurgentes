@@ -1,5 +1,5 @@
 import './home.css';
-import bg from './imagenes/patron_naranja.png'
+import bg from '../imagenes/patron_naranja.png'
 
 function Home() {
   return (
