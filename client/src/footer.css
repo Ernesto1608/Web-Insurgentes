@@ -1,0 +1,18 @@
+a {
+    padding:25px;
+    color: #DCD9D0;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #F86927;
+    text-decoration: none;
+    
+}
+
+footer{
+    padding: 15px;
+    background-color: #2A2A2C;
+    background-image: url("./imagenes/patron_naranja.png");
+    background-size: cover;
+}
