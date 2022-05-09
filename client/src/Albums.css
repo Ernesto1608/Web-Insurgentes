@@ -1,0 +1,16 @@
+.Albums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCD9D0;
+    background-image: url(./imgs/patronCalavera_insurgentes-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Albums .Songs {
+    justify-content: end;
+    color: black;
+}
