@@ -10,7 +10,7 @@
 
 .slider-container {
   height: var(--heights);
-  width: 30%;
+  width: 80%;
   position: relative;
   margin: auto;
   overflow: hidden;
