@@ -10,7 +10,7 @@ function NavBar() {
         <a href="/home">Inicio</a>
         <a  href="/conciertos">Eventos</a>
         <a  href="/albums">Albums</a>
-        <a  href="https://main.d3baxetnwpul8q.amplifyapp.com/" target="blank" >Tienda</a>
+        <a  href="https://main.d36vs425hxko9i.amplifyapp.com/" target="blank" >Tienda</a>
     </div>
   </nav>
   );

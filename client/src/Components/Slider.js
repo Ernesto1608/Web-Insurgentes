@@ -11,9 +11,12 @@ function Slider(props) {
   
   const [activeIndex, setActiveIndex] = useState(0);
 
+  props.setSongsList(sliderImage[activeIndex].songs);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      props.setSongsList(sliderImage[activeIndex].songs);
     }, 10000);
     return () => clearInterval(interval);
   }, [activeIndex]);
