@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "./Conciertos.css";
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -40,7 +41,8 @@ const rows = [
 
 export default function Events() {
   return (
-    <TableContainer component={Paper}>
+    <div className="Conciertos">
+      <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -61,6 +63,7 @@ export default function Events() {
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+      </TableContainer>
+    </div>
   );
 }

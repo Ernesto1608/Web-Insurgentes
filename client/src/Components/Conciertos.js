@@ -7,8 +7,8 @@ function Conciertos() {
   return (
     <>
     <NavBar />
-      <div className="Conciertos">
-        <h2>Proximos conciertos</h2>
+    <div className="Conciertos">
+      <h2>Proximos conciertos</h2>
     </div>
     <Events /> 
     <Footer />
