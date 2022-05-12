@@ -5,12 +5,14 @@ import Footer from './footer';
 
 function Conciertos() {
   return (
-    <div className="Conciertos">
-        <NavBar />
+    <>
+    <NavBar />
+      <div className="Conciertos">
         <h2>Proximos conciertos</h2>
-        <Events /> 
-        <Footer />
     </div>
+    <Events /> 
+    <Footer />
+    </>
   );
 }
 
