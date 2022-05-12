@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import "./Albums.css";
 import SliderList from "./SliderList";
-// import NavBar from './Components/nav';
-// import Footer from "./footer";
+import NavBar from './nav';
+import Footer from "./footer";
 import Slider from "./Slider";
 
 function Albums(){
@@ -10,8 +10,9 @@ function Albums(){
   const [songsList, setSongsList] = useState([]);
 
     return (
+      <>
+        <NavBar />
         <div className="Albums">
-          {/* <NavBar /> */}
           <div class="container-fluid">
             <div className = "row">
               <div className = "col-lg-6">
@@ -22,8 +23,9 @@ function Albums(){
               </div>
             </div>
           </div>
-          {/* <Footer /> */}
         </div>
+        <Footer />
+      </>
     );
 }
 

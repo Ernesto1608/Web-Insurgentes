@@ -5,12 +5,12 @@ function NavBar() {
   return (
     <nav class="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./Index.js">
+      <a class="navbar-brand" href="/home">
         <img src={nombre} alt="logo" width="150" height="auto" class="d-inline-block align-text-top"></img></a>
-        <a href="../Index.js">Inicio</a>
-        <a  href="./Conciertos.js">Eventos</a>
-        <a  href="./Albums.js">Albums</a>
-        <a  href="#">Tienda</a>
+        <a href="/home">Inicio</a>
+        <a  href="/conciertos">Eventos</a>
+        <a  href="/albums">Albums</a>
+        <a  href="https://main.d3baxetnwpul8q.amplifyapp.com/" target="blank" >Tienda</a>
     </div>
   </nav>
   );

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Events from './Events';
 import NavBar from './nav';
 import Footer from './footer';
