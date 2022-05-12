@@ -1,15 +1,18 @@
+import "./Conciertos.css";
 import Events from './Events';
 import NavBar from './nav';
 import Footer from './footer';
 
 function Conciertos() {
   return (
+    <>
+    <NavBar />
     <div className="Conciertos">
-        <NavBar />
-        <h2>Proximos conciertos</h2>
-        <Events /> 
-        <Footer />
+      <h2>Proximos conciertos</h2>
     </div>
+    <Events /> 
+    <Footer />
+    </>
   );
 }
 

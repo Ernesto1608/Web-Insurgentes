@@ -1,0 +1,11 @@
+.Conciertos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    background-image: url(../imagenes/patrón\ lineas_insurgentes-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

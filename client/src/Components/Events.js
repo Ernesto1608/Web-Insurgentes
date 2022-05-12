@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "./Conciertos.css";
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -36,11 +37,18 @@ const rows = [
   createData('Fecha 1', 'Lugar 1', 'Link 1'),
   createData('Fecha 2', 'Lugar 2', 'Link 2'),
   createData('Fecha 3', 'Lugar 3', 'Link 3'),
+  createData('Fecha 4', 'Lugar 4', 'Link 4'),
+  createData('Fecha 5', 'Lugar 5', 'Link 5'),
+  createData('Fecha 6', 'Lugar 6', 'Link 6'),
+  createData('Fecha 7', 'Lugar 7', 'Link 7'),
+  createData('Fecha 8', 'Lugar 8', 'Link 8'),
+  createData('Fecha 9', 'Lugar 9', 'Link 9'),
 ];
 
 export default function Events() {
   return (
-    <TableContainer component={Paper}>
+    <div className="Conciertos">
+      <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -61,6 +69,7 @@ export default function Events() {
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+      </TableContainer>
+    </div>
   );
 }
