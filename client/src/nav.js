@@ -8,8 +8,8 @@ function NavBar() {
       <a class="navbar-brand" href="./Index.js">
         <img src={nombre} alt="logo" width="150" height="auto" class="d-inline-block align-text-top"></img></a>
         <a href="./Index.js">Inicio</a>
-        <a  href="#">Eventos</a>
-        <a  href="#">Albums</a>
+        <a  href="./App.js">Eventos</a>
+        <a  href="./Albums.js">Albums</a>
         <a  href="#">Tienda</a>
     </div>
   </nav>
