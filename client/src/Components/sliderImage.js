@@ -1,6 +1,6 @@
 import First from "../imagenes/LaMarcha.png"
 import Second from "../imagenes/LaResistencia.png";
-import Third from "../imagenes/Album3.jpg";
+import Third from "../imagenes/ElGranFinal.png";
 
 export default [
   {

@@ -3,19 +3,19 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from '@mui/material/ListItemText';
-import AudiotrackIcon from '@mui/icons-material/Audiotrack';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 
 function SliderList({ albumSongs }) {
 
   return (
     <div className='slider-list' style={{ display: "flex", justifyContent: "center", marginTop: "20vh",}}>
-      <List dense sx={{ width: '100%', maxwidth: 360, bgcolor: '#fff' }}>
+      <List dense sx={{ width: '55%', maxwidth: 360, bgcolor: '#2A2A2C', color: "white"}}>
         {albumSongs.map((song) => {
           const labelId = `secondary-label-${song}`;
           return (
             <ListItem key={song} disablePadding >
               <ListItemButton>
-                  <AudiotrackIcon />
+                  <LibraryMusicIcon />
                   <ListItemText id={labelId} primary={song}/>
               </ListItemButton>
             </ListItem>
