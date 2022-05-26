@@ -1,4 +1,5 @@
-var express = require('express'),   
+var express = require('express'),
+cors = require('cors'),
 app = express(),   
 port = process.env.PORT || 3000,   
 mongoose = require('mongoose'),   
@@ -6,7 +7,8 @@ Evento = require('./api/models/EventoModel'),
 Album = require('./api/models/AlbumModel'), 
 bodyParser = require('body-parser');    
 mongoose.Promise = global.Promise; 
-mongoose.connect('mongodb+srv://Ernesto:GeFCaFJUhQa6F8b7@cluster0.yvysy.mongodb.net/webInsurgentes?retryWrites=true&w=majority');    
+mongoose.connect('mongodb+srv://Ernesto:GeFCaFJUhQa6F8b7@cluster0.yvysy.mongodb.net/webInsurgentes?retryWrites=true&w=majority');
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(bodyParser.json());
 var routes = 
