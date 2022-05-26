@@ -1,0 +1,39 @@
+nav{
+    background-color: #2A2A2C;
+    color: #DCD9D0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #DCD9D0;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #F86927;
+    text-decoration: none;
+    
+}
+
+.admin .h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-weight:bold;
+    margin: 5px 0 0 0;
+    color: #DCD9D0;
+}
+
+.admin .container-fluid {
+    justify-content:space-between;
+}
+
+.admin .login {
+    margin-right: 20px;
+}
+
+.admin input {
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    background-color: #DCD9D0;
+    font-weight: bolder;
+}

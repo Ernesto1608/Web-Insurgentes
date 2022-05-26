@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useEffect, useState} from "react";
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,6 +8,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+const axios = require("axios");
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -28,30 +31,38 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(fecha, lugar, link) {
-  return { fecha, lugar, link };
-}
-
-const rows = [
-  createData('Fecha 1', 'Lugar 1', 'Link 1'),
-  createData('Fecha 2', 'Lugar 2', 'Link 2'),
-  createData('Fecha 3', 'Lugar 3', 'Link 3'),
-];
-
 export default function Events() {
+  const [rows, setRows] = useState([]);  
+
+  const getEvents = async () => {
+    let response = await axios({
+        url: `https://web-insurgentes-api.herokuapp.com/eventos`,
+        method: "GET",
+    });
+    setRows(response.data);
+  }
+
+  const getData = async () => {
+    await getEvents();
+  }
+
+  useEffect(() => {
+    getData();
+  },[]);
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Eventos</StyledTableCell>
-            <StyledTableCell>Lugares</StyledTableCell>
+            <StyledTableCell>Fecha</StyledTableCell>
+            <StyledTableCell>Lugar</StyledTableCell>
             <StyledTableCell>Tickets</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <StyledTableRow key={row.fecha}>
+            <StyledTableRow key={row._id}>
               <StyledTableCell component="th" scope="row">
                 {row.fecha}
               </StyledTableCell>

@@ -11,6 +11,7 @@ import Bio from './Components/biografia'
 import Footer from './Components/footer'
 import Conciertos from './Components/Conciertos';
 import Albums from './Components/Albums';
+import Admin from './Components/Admin';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/albums">
             <Albums/>
+          </Route>
+          <Route path="/admin">
+            <Admin/>
           </Route>
         </Switch>
     </Router>    
